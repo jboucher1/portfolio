@@ -23,7 +23,7 @@ export class AppComponent {
     );
 
 
-  constructor(private breakpointObserver: BreakpointObserver, private navigation: NavigationService) {
+  constructor(private breakpointObserver: BreakpointObserver, public navigation: NavigationService) {
   }
 
   scrollTo(view, nav):void{
