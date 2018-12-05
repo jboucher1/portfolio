@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+html, body { 
+    height: 100%;
+}
+
+body { 
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container { 
+    max-width:1400px !important;
+    margin:0 auto !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.padding-width{
+    padding-left:36px;
+    padding-right:36px;
+}
+
+.border-left{
+    border-left-style:solid;
+    padding-left:16px;
+}

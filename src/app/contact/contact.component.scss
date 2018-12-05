@@ -1,0 +1,17 @@
+.contact{
+    min-height:100vh;
+    a{
+        text-decoration:none;
+        color: inherit;
+    }
+    .icon-button{
+        font-size:inherit;
+        margin-left:8px;
+        padding:8px;
+    }
+    mat-icon{
+        width:auto;
+        height:auto;
+        font-size:75%;
+    }
+}

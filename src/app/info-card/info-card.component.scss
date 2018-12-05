@@ -1,0 +1,50 @@
+.info-card{
+    margin:16px 8px 36px 8px;
+}
+.info-header{
+    padding:8px;
+}
+
+.commits{
+    text-align:center;
+    margin-right:16px;
+    span{
+        display:block;
+    }
+    span:first-child{
+        font-size:1.8em;
+    }
+    span:last-child{
+        font-size:0.5em;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+}
+
+.commits-lines{
+    font-weight: 100;
+    font-size:90%;
+    margin-right:8px;
+    span{
+        display:block;
+    }
+    span:first-child{
+        color:green;
+        margin-top:2px;
+        margin-bottom:8px;
+    }
+    span:last-child{
+        color:red;
+    }
+}
+.logo{
+    width:150px;
+    height:66px;
+    margin-right:16px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+mat-card-content{
+    padding:0 8px;
+}
