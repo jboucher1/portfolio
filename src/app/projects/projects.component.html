@@ -1,3 +1,16 @@
 <div class="projects">
-<header>Projects</header>
+    <header>Projects</header>
+    <div class="container projects-wrapper" fxLayout="row wrap">
+        <div *ngFor="let card of projects.getProjects()" fxFlex="50" fxFlex.xs="100" routerLink="/projects/{{card.id}}">
+            <mat-card>
+                <div class="card-image">
+                </div>
+                <div class="card-header" fxLayout="row" fxLayoutAlign="center start">
+                    <span class="mat-card-title" fxFlex>{{card.title}}</span>
+                    <mat-icon>chevron_right</mat-icon>
+                </div>
+            </mat-card>
+        </div>
+
+    </div>
 </div>

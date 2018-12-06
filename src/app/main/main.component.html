@@ -1,3 +1,41 @@
+<button *ngIf="isHandset$ | async" type="button" aria-label="Toggle sidenav" mat-fab class="menu-button" color="primary"
+(click)="sideNav.toggle()">
+<mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+</button>
+<mat-sidenav-container class="sidenav-container">
+
+<mat-sidenav #sideNav class="sidenav" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
+  [opened]="!(isHandset$ | async)">
+
+  <mat-nav-list class="primary-border">
+    <a class="menu-header" (click)="scrollTo('landing', sideNav)" fxLayout="column" fxLayoutAlign="center center">
+      <div>
+        <span class="primary-color header">Jess</span>
+        <span class="primary-color header">Boucher</span>
+        <span class="sub-header">FRONT END DEVELOPER</span>
+      </div>
+      
+    </a>
+    <a mat-list-item [ngClass]="navigation.currentPath === 'about'? 'active': ''" (click)="scrollTo('about', sideNav)">
+      <mat-icon class="primary-color">person</mat-icon>
+      <span>About</span>
+    </a>
+    <a mat-list-item [ngClass]="navigation.currentPath === 'experience'? 'active': ''" (click)="scrollTo('experience', sideNav)">
+      <mat-icon class="primary-color">trending_up</mat-icon>
+      <span>Experience</span>
+    </a>
+    <a mat-list-item [ngClass]="navigation.currentPath === 'projects'? 'active': ''" (click)="scrollTo('projects', sideNav)">
+      <mat-icon class="primary-color">view_quilt</mat-icon>
+      <span>Projects</span>
+    </a>
+    <a mat-list-item [ngClass]="navigation.currentPath === 'contact'? 'active': ''" (click)="scrollTo('contact', sideNav)">
+      <mat-icon class="primary-color">email</mat-icon>
+      <span>Contact</span>
+    </a>
+
+  </mat-nav-list>
+</mat-sidenav>
+<mat-sidenav-content scrollContainer>
 <div class="main">
     <landing inView="landing" id="landing"></landing>
     <about inView="about" id="about"></about>
@@ -5,4 +43,7 @@
     <projects inView="projects" id="projects"></projects>
     <contact inView="contact" id="contact"></contact>
 </div>
+</mat-sidenav-content>
+</mat-sidenav-container>
+
 

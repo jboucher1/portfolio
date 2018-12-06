@@ -27,6 +27,7 @@ import { SvgComponent } from './project-views/svg/svg.component';
 import { ComponentsComponent } from './project-views/components/components.component';
 import { CopyDirective } from './directives/clipboard/copy/copy.directive';
 import { SafePipe } from './pipes/safe/safe.pipe';
+import { ProjectIframeComponent } from './project-iframe/project-iframe.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { SafePipe } from './pipes/safe/safe.pipe';
     ComponentsComponent,
     CopyDirective,
     SafePipe,
+    ProjectIframeComponent,
   ],
   imports: [
     BrowserModule,
