@@ -18,8 +18,8 @@
  * BROWSER POLYFILLS
  */
 
-import * as smoothscroll from './polyfill-smoothscroll.min.js';
-smoothscroll.polyfill();
+// import * as smoothscroll from './polyfill-smoothscroll.min.js';
+// smoothscroll.polyfill();
 
 /** IE9, IE10 and IE11 requires all of the following polyfills. **/
 import 'core-js/es6/symbol';
