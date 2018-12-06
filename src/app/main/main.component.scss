@@ -1,9 +1,14 @@
+:host{
+  height:100%;
+  width:100%;
+}
+
 .main{
     position:relative;
 }
 
 .sidenav-container {
-    height: 100vh;
+    height: 100%;
   }
   
   .sidenav {
