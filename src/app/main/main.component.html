@@ -6,26 +6,26 @@
   <mat-sidenav #sideNav class="sidenav" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="!(isHandset$ | async)">
     <mat-nav-list class="primary-border">
-      <a class="menu-header" (click)="scrollTo('about', sideNav)" fxLayout="column" fxLayoutAlign="center center">
+      <a class="menu-header" (click)="scrollTo('about')" fxLayout="column" fxLayoutAlign="center center">
         <div>
           <span class="primary-color header">Jess</span>
           <span class="primary-color header">Boucher</span>
           <span class="sub-header">FRONT END DEVELOPER</span>
         </div>
       </a>
-      <a mat-list-item [ngClass]="navigation.currentPath === 'about'? 'active': ''" (click)="scrollTo('about', sideNav)">
+      <a mat-list-item [ngClass]="navigation.currentPath === 'about'? 'active': ''" (click)="scrollTo('about')">
         <mat-icon class="primary-color">person</mat-icon>
         <span>About</span>
       </a>
-      <a mat-list-item [ngClass]="navigation.currentPath === 'experience'? 'active': ''" (click)="scrollTo('experience', sideNav)">
+      <a mat-list-item [ngClass]="navigation.currentPath === 'experience'? 'active': ''" (click)="scrollTo('experience')">
         <mat-icon class="primary-color">trending_up</mat-icon>
         <span>Experience</span>
       </a>
-      <a mat-list-item [ngClass]="navigation.currentPath === 'projects'? 'active': ''" (click)="scrollTo('projects', sideNav)">
+      <a mat-list-item [ngClass]="navigation.currentPath === 'projects'? 'active': ''" (click)="scrollTo('projects')">
         <mat-icon class="primary-color">view_quilt</mat-icon>
         <span>Projects</span>
       </a>
-      <a mat-list-item [ngClass]="navigation.currentPath === 'contact'? 'active': ''" (click)="scrollTo('contact', sideNav)">
+      <a mat-list-item [ngClass]="navigation.currentPath === 'contact'? 'active': ''" (click)="scrollTo('contact')">
         <mat-icon class="primary-color">email</mat-icon>
         <span>Contact</span>
       </a>
