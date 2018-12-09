@@ -28,6 +28,7 @@ import { ComponentsComponent } from './project-views/components/components.compo
 import { CopyDirective } from './directives/clipboard/copy/copy.directive';
 import { SafePipe } from './pipes/safe/safe.pipe';
 import { ProjectIframeComponent } from './project-iframe/project-iframe.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { ProjectIframeComponent } from './project-iframe/project-iframe.componen
     MatCardModule,
     ScrollDispatchModule,
     ClipboardModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpClientModule
     
   ],
   providers: [],

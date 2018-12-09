@@ -1,16 +1,12 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { NavigationService } from './../services/navigation/navigation.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'landing',
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss']
 })
-export class LandingComponent implements OnInit {
+export class LandingComponent{
 
-  constructor(private ele: ElementRef) { }
-
-  ngOnInit() {
-  }
-
-
+  constructor(public navigation:NavigationService) { }
 }

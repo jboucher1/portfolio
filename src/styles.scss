@@ -5,6 +5,10 @@ html, body {
 body { 
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    letter-spacing: .3px;
+}
+p{
+    line-height:1.5em;
 }
 
 .container { 
@@ -24,4 +28,18 @@ body {
 .border-left{
     border-left-style:solid;
     padding-left:16px;
+}
+
+.round-button{
+    width:56px;
+    height:56px;
+    border-radius:50% !important;
+    min-width:56px !important;
+    padding:0 !important;
+    
+    .mat-icon{
+        height:auto;
+        width:auto;
+        font-size:36px;
+    }
 }

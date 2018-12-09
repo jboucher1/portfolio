@@ -23,6 +23,15 @@ $theme: mat-dark-theme($primary, $accent);
     $background: map-get($theme, background);
     $foreground: map-get($theme, foreground);
 
+    .background-background-color{
+        background-color: mat-color($background, background);
+        color: mat-color($foreground, text);
+    }
+    .dialog-background-color{
+        background-color: mat-color($background, dialog);
+        color: mat-color($foreground, text);
+    }
+
     .primary-background{
         background-color: mat-color($primary);
     }

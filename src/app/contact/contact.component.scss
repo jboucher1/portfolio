@@ -10,10 +10,10 @@
         margin-left:8px;
         padding:8px;
     }
+    $icon-size:80px;
     mat-icon{
-        width:auto;
-        height:auto;
-        font-size:75%;
-        opacity:0.8;
+        width:$icon-size;
+        height:$icon-size;
+        font-size:$icon-size;
     }
 }

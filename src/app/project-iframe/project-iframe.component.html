@@ -1,3 +1,12 @@
-<p>
-  project-iframe works!
-</p>
+<div fxLayout="column" fxFlex>
+  <div fxLayout="row" class="background-background-color navigation" fxLayoutAlign="end center">
+    <button mat-button (click)="back()" class="round-button">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <div fxFlex class="navigation-content">
+      <span>{{project.title}}</span>
+    </div>
+    
+  </div>
+  <iframe [src]="project.iframe | safe:'resourceUrl'" fxFlex></iframe>
+</div>

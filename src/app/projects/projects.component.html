@@ -1,7 +1,7 @@
 <div class="projects">
     <header>Projects</header>
     <div class="container projects-wrapper" fxLayout="row wrap">
-        <div *ngFor="let card of projects.getProjects()" fxFlex="50" fxFlex.xs="100" routerLink="/projects/{{card.id}}">
+        <div *ngFor="let card of projects" fxFlex="50" fxFlex.xs="100" routerLink="/projects/{{card.id}}">
             <mat-card>
                 <div class="card-image">
                 </div>
