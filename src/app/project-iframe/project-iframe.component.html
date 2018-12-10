@@ -1,4 +1,4 @@
-<div fxLayout="column" fxFlex>
+<!-- <div fxLayout="column" fxFlex>
   <div fxLayout="row" class="background-background-color navigation" fxLayoutAlign="end center">
     <button mat-button (click)="back()" class="round-button">
       <mat-icon>arrow_back</mat-icon>
@@ -7,6 +7,9 @@
       <span>{{project.title}}</span>
     </div>
     
-  </div>
-  <iframe [src]="project.iframe | safe:'resourceUrl'" fxFlex></iframe>
-</div>
+  </div> -->
+  <iframe [src]="project.iframe | safe:'resourceUrl'"></iframe>
+<!-- </div> -->
+<button mat-button (click)="back()" mat-fab class="back" color="primary">
+    <mat-icon>arrow_back</mat-icon>
+  </button>

@@ -1,8 +1,14 @@
 .about{
     min-height:100%;
 }
+.container{
+    padding-bottom:36px;
+}
 @media screen and (max-width:559px){
     .about{
         min-height:50%;
+    }
+    .container{
+        padding-bottom:0;
     }
 }

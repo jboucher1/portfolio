@@ -14,14 +14,14 @@
 .main{
     position:relative;
     height:100%;
-}
-
-.sidenav-container {
-    height: 100%;
     background-image: url('/assets/background-images/background-jess.svg');
     background-repeat: no-repeat;
     background-size: 81vh;
     background-position: 97% 18vh;
+}
+
+.sidenav-container {
+    height: 100%;
   }
   
   .sidenav {
@@ -58,6 +58,7 @@
     }
   
   }
+  
   .menu-button{
     position:fixed;
     bottom:16px;

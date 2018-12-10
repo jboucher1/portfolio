@@ -1,11 +1,11 @@
 <mat-card class="info-card">
   <div fxLayout="row" fxLayout.xs="column" class="info-header">
-    <div *ngIf="logo" [ngStyle]="getLogo()" class="logo"></div>
     <div fxFlex>
       <span class="mat-card-title">{{title}}</span>
       <span class="mat-card-subtitle">{{subTitle}}</span>
     </div>
-    <div fxLayout="row" style="margin-bottom:16px;">
+    <div *ngIf="logo" [ngStyle]="getLogo()" class="logo"></div>
+    <!-- <div fxLayout="row" style="margin-bottom:16px;">
       <div class="commits" *ngIf="commits">
         <span>{{commits | number}}</span>
         <span>Commits</span>
@@ -14,7 +14,7 @@
         <span>{{linesAdded | number}} +</span>
         <span>{{linesRemoved | number}} -</span>
       </div>
-    </div>
+    </div> -->
   </div>
   <mat-card-content>
     <ng-content select=[content]></ng-content>
