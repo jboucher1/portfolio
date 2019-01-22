@@ -1,6 +1,5 @@
 .landing{
     min-height:100%;
-    padding-top:36px;
 }
 
 span{
@@ -9,14 +8,16 @@ span{
 
 .header{
     font-size:2.5em;
-    font-weight: 100;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom:16px;
 }
 
 .sub-header{
-    padding-top:8px;
-    font-size:0.9em;
+    padding-bottom:16px;
+    font-size:1em;
 }
 
-.round-button{
-    margin-bottom:16px;
+.custom-button{
+    margin-top:8px;
 }

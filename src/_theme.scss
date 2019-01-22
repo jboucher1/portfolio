@@ -3,10 +3,18 @@
 
 $primary: mat-palette($mat-blue, 700, 500, 900);
 $accent:  mat-palette($mat-blue-grey, A200, A100, A400);
+$background-color:  #000000;
+$drawer-background-color: #fff;
+
 
 
 
 $theme: mat-dark-theme($primary, $accent);
+
+$background: map-get($theme, background);
+$background: map_merge($background, (background: $background-color, dialog: $background-color));
+$theme: map_merge($theme, (background: $background));
+
 
 @include angular-material-theme($theme);
 
@@ -22,6 +30,32 @@ $theme: mat-dark-theme($primary, $accent);
     $warn: map-get($theme, warn);
     $background: map-get($theme, background);
     $foreground: map-get($theme, foreground);
+    .mat-drawer{
+        // background-color:red;
+    }
+
+    .custom-fab{
+        color:mat-color($primary) !important;
+        border-color: mat-color($primary) !important;
+        border: solid !important;
+        background-color: mat-color($background, background) !important;
+    }
+    
+    .custom-fab.mat-fab .mat-button-wrapper{
+        padding:0 !important;
+    }
+
+    .custom-button{
+        color:mat-color($primary) !important;
+        border-color: mat-color($primary) !important;
+        border: solid !important;
+        border-radius: 50px !important;
+        line-height: 48px !important;
+        padding: 0 24px !important;
+        font-weight: 600;
+        min-width:none !important;
+        background-color: mat-color($background, background) !important;
+    }
 
     .background-background-color{
         background-color: mat-color($background, background);

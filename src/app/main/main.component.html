@@ -1,4 +1,4 @@
-<button *ngIf="isHandset$ | async" type="button" aria-label="Toggle sidenav" mat-fab class="menu-button" color="primary"
+<button *ngIf="isHandset$ | async" type="button" aria-label="Toggle sidenav" class="custom-fab menu-button" mat-fab 
   (click)="sideNav.toggle()">
   <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
 </button>
@@ -33,7 +33,7 @@
   </mat-sidenav>
   <mat-sidenav-content scrollContainer>
     <div class="main">
-      <landing inView="landing" id="landing" *ngIf="isHandset$ | async"></landing>
+      <landing inView="landing" id="landing"></landing>
       <about inView="about" id="about"></about>
       <experience inView="experience" id="experience"></experience>
       <projects inView="projects" id="projects"></projects>
