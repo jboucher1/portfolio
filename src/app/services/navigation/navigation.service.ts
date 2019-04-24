@@ -15,11 +15,10 @@ export class NavigationService {
   constructor(private router: Router) {}
 
   scrollTo(path){
-    console.log(path)
     if(!path) return;
     if(path.indexOf('#') !== -1) {
       path = path.replace('#', '');
-    }
+    };
     let start = this.elements[path].start;
 
     this.scrollElement.scrollTo({top: start, behavior: "smooth"})
