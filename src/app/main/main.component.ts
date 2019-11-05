@@ -14,10 +14,11 @@ export class MainComponent{
   @ViewChild('sideNav') public sideNav: MatSidenav;
   isHandset:boolean;
 
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.Handset, Breakpoints.Small])
     .pipe(
       map(result => {
         this.isHandset = result.matches
+        console.log(result.matches, result)
         return result.matches
       })
     );

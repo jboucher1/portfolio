@@ -20,15 +20,12 @@ import { ScrollDispatchModule } from '@angular/cdk/scrolling';
 import { ScrollContainerDirective } from './directives/scroll-container/scroll-container.directive';
 import { HeaderComponent } from './header/header.component';
 import { InfoCardComponent } from './info-card/info-card.component';
-import { AllComponent } from './project-views/all/all.component';
-import { CmsComponent } from './project-views/cms/cms.component';
-import { WebsitesComponent } from './project-views/websites/websites.component';
-import { SvgComponent } from './project-views/svg/svg.component';
-import { ComponentsComponent } from './project-views/components/components.component';
 import { CopyDirective } from './directives/clipboard/copy/copy.directive';
 import { SafePipe } from './pipes/safe/safe.pipe';
 import { ProjectIframeComponent } from './project-iframe/project-iframe.component';
 import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -42,11 +39,6 @@ import { HttpClientModule } from '@angular/common/http';
     ScrollContainerDirective,
     HeaderComponent,
     InfoCardComponent,
-    AllComponent,
-    CmsComponent,
-    WebsitesComponent,
-    SvgComponent,
-    ComponentsComponent,
     CopyDirective,
     SafePipe,
     ProjectIframeComponent,
@@ -55,7 +47,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FlexLayoutModule,
+    FlexLayoutModule.withConfig({useColumnBasisZero: true}),
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,

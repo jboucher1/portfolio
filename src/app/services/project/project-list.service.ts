@@ -40,8 +40,4 @@ export class ProjectListService {
         }]
     )
   }
-
-  // getProject(id:number){
-  //   return this.getProjects().pipe()
-  // }
 }

@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './info-card.component.html',
   styleUrls: ['./info-card.component.scss']
 })
-export class InfoCardComponent implements OnInit {
+export class InfoCardComponent{
   @Input('logo') logo :string;
   @Input('title') title :string;
   @Input('subTitle') subTitle :string;
@@ -14,9 +14,6 @@ export class InfoCardComponent implements OnInit {
   @Input('linesRemoved') linesRemoved :string;
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
   getLogo(){
     return {
