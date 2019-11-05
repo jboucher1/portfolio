@@ -4,8 +4,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
-  {path:'', component:MainComponent},
-  {path:'projects/:id', component:ProjectIframeComponent}
+  {path:'', component:MainComponent, pathMatch: 'full'},
+  {path:'projects/:id', component:ProjectIframeComponent},
+  {path:'**', redirectTo:''}
 ];
 
 @NgModule({
